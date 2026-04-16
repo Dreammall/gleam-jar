@@ -35,13 +35,21 @@ Gleam Jar は「書いた事実」を守ります。<br>
 瓶が空のときも寂しくならないように<br>
 
 ### (5) ログイン・ユーザ登録
-新規登録
-ログインで自分のアカウントにアクセス
+新規登録,ログインで自分のアカウントにアクセス
 
 ### (6) 通知機能
 リマインダー
 メール通知
 
 ## 技術スタック
-カテゴリ技術BackendPHP 8.3 / Laravel 12FrontendReact / Node.jsDatabasePostgreSQL認証Laravel BreezeインフラDocker (Laravel Sail)テストPHPUnit / MockeryAPI設計OpenAPI / Swagger（予定）CI/CDGitHub Actions（予定）
 
+| カテゴリ    | 技術        | 
+|:----------:|:-----------:|
+| バックエンド | PHP 8.3 / Laravel 12 |
+| フロントエンド | React / Node.js |
+| データベース | PostgreSQL |
+| 認証 | Laravel Breeze |
+| インフラ | Docker (Laravel Sail) |
+| テスト | PHPUnit / Mockery |
+| API設計 | OpenAPI / Swagger（予定）|
+| CI/CD | GitHub Actions（予定）|
