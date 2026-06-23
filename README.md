@@ -18,9 +18,7 @@ Gleam Jarは「書いた事実」を守ります。<br>
 ## 主な機能
 
 ### (1) 書き込み
-・💜（ハート）: 内面の変化・自分についての良かったこと<br>
-・⭐（スター）: 外の出来事の良かったこと<br>
-・ハートとスター、いずれも1日何個でも書ける（225文字以内 / 画像1枚までアップロード可能）<br>
+1日何個でも書ける（225文字以内 / 画像1枚までアップロード可能）<br>
 【ER図】 <br>
 ```mermaid
 erDiagram
@@ -36,7 +34,6 @@ erDiagram
     entries {
         BIGINT id PK
         BIGINT user_id FK
-        ENUM type
         STRING content
         STRING image_path
         TIMESTAMP created_at
@@ -46,7 +43,6 @@ erDiagram
     users ||--o{ entries : "has many"
 
 ```
-　※ type は heart または star を格納 <br>
 　※ content は 最大255文字 <br>
 　※ image_path は NULLも可 <br>
 　※ created_at 書き込み時点時刻を出来事の時刻とする <br>
@@ -61,7 +57,6 @@ erDiagram
 
 ### (3) ログ表示
 ・日時で書き込んだ内容を遡れる<br>
-・💜 / ⭐ ごとにフィルタリング可能<br>
 ・キーワード検索<br>
 
 ### (4) マスコット
